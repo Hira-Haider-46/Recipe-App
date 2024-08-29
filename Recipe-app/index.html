@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container" id="search-container">
+        <div class="search">
+            <input type="text" placeholder="Enter dish name here" id="user-input" />
+            <button id="search-btn">Search</button>
+        </div>
+        <h3 style="display: none;">Input field cannot be empty</h3>
+    </div>
+
+    <div id="loader" style="display: none;">Loading...</div>
+
+    <div class="container" id="result-container" style="display: none;">
+        <h3 id="no-results-message" style="display: none;">No meals found</h3>
+        <div id="result" class="recipe-list"></div>
+    </div>
+
+    <div class="container" id="recipe-container" style="display: none;">
+        <div id="recipe-details">
+            <h2 id="recipe-title"></h2>
+            <ul id="ingredient-list"></ul>
+        </div>
+        <div class="btn">
+            <button id="back-to-result">Back</button>
+            <button id="view-recipe">View Recipe</button>
+        </div>
+    </div>
+
+    <div class="container" id="instructions-container" style="display: none;">
+        <p id="recipe-text"></p>
+        <button id="back-to-details">Back</button>
+    </div>
+
+    <div id="recipe-card-template" class="recipe-card" style="display: none;">
+        <h2 class="recipe-title">Recipe Title</h2>
+        <h4 class="recipe-servings">Servings</h4>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
